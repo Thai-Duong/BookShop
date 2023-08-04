@@ -1,0 +1,44 @@
+.footer {
+  padding: 30px 120px;
+  background-color: #e6b23a;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  .footer__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--logo {
+      margin-right: auto;
+      font-size: 25px;
+      color: olive;
+      font-weight: 600;
+    }
+    &__title {
+      font-size: 20px;
+      font-weight: 700px;
+    }
+    a,
+    p {
+      color: black;
+      font-size: 15px;
+      margin: 10px 0;
+    }
+    i {
+      font-size: 30px;
+      margin-right: 10px;
+      color: black;
+    }
+    img {
+      display: inline-block;
+      height: 50px;
+      width: 140px;
+      background-color: white;
+      border-radius: 8px;
+    }
+  }
+  @include mobile {
+    padding: 20px;
+    display: inline-block;
+  }
+}

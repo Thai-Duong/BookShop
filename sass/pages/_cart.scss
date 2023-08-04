@@ -1,0 +1,89 @@
+.cart {
+  margin: 80px 0 0 0;
+  display: flex;
+  gap: 20px;
+  &__table {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    table {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      font-size: 15px;
+      td:nth-child(1) {
+        width: 150px;
+        text-align: center;
+      }
+      td:nth-child(2) {
+        width: 150px;
+        text-align: center;
+      }
+      td:nth-child(3) {
+        width: 200px;
+        text-align: center;
+      }
+      td:nth-child(4) {
+        width: 100px;
+        text-align: center;
+        input {
+          width: 50px;
+          padding: 10px;
+        }
+      }
+      td:nth-child(5) {
+        width: 200px;
+        text-align: center;
+      }
+      td:nth-child(6) {
+        width: 100px;
+        text-align: center;
+        color: red;
+        font-size: 25px;
+      }
+      thead {
+        border-left: none;
+        border-right: none;
+        border: 1px solid black;
+        td {
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 15px;
+          padding: 20px 0;
+        }
+      }
+      img {
+        width: 150px;
+      }
+    }
+  }
+  &__total {
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    button {
+      width: 100%;
+      bottom: 0;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: red;
+      color: white;
+    }
+    .total-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 15px;
+      margin: 10px 0;
+    }
+  }
+  @include mobile {
+    display: block;
+    &__table {
+      overflow-x: auto;
+      width: 100%;
+    }
+    &__total {
+      width: 100%;
+    }
+  }
+}
