@@ -1,0 +1,36 @@
+.banner {
+  &__top {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    height: 50%;
+    width: 100%;
+    img {
+      border-radius: 8px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination {
+      color: yellow;
+    }
+  }
+  &__bottom {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  &__product {
+    width: 100%;
+    height: 440px;
+  }
+  @include mobile {
+    &__top {
+      &--2 img {
+        height: 85px;
+      }
+    }
+  }
+}
